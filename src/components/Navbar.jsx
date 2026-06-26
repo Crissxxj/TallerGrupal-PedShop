@@ -1,10 +1,12 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="logo">
-        <h2>🐾 PawShop</h2>
+        <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <h2>🐾 PawShop</h2>
+        </Link>
       </div>
       <div className="nav-links">
         <NavLink to="/" className="nav-link">Inicio</NavLink>
